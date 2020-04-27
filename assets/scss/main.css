@@ -6490,8 +6490,18 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-header h1 {
-  color: #6f42c1;
-  font-family: sans-serif; }
+@font-face {
+  font-family: 'bitter';
+  src: url("../fonts/Bitter-Regular.ttf"); }
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center; }
+  header a {
+    text-decoration: none !important; }
+  header h1 a {
+    color: #6f42c1;
+    font-family: bitter; }
 
 /*# sourceMappingURL=main.css.map */

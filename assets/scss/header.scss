@@ -1,7 +1,19 @@
 
 header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none!important;
+  }
+
   h1 {
-    color: $purple;
-    font-family: sans-serif
+    a {
+      color: $purple;
+      font-family: bitter;
+    }
+
   }
 }
