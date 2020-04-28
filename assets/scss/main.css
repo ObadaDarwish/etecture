@@ -6559,9 +6559,21 @@ header {
       font-size: 4.6rem;
       margin: 1rem 0;
       color: #333333; }
+      @media only screen and (max-width: 768px) {
+        .menu ul li {
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 480px) {
+        .menu ul li {
+          font-size: 3rem; } }
   .menu #nav-list li {
     font-size: 2rem;
     color: #333333; }
+    @media only screen and (max-width: 768px) {
+      .menu #nav-list li {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 480px) {
+      .menu #nav-list li {
+        font-size: 1.6rem; } }
   .menu #menu-trigger-close {
     display: flex;
     font-weight: 600;
