@@ -1,12 +1,17 @@
-body{
-  overflow-x:hidden;
-}
 *{
   margin: 0;
   padding: 0;
 }
 html{
-  font-size:10px
+  font-size:10px;
+}
+html, body {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body{
+  overflow-x:hidden;
 }
 @import "_bootstrap-overrides";
 @import "__fonts";
