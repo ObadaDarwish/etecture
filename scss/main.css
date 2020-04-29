@@ -6515,7 +6515,8 @@ header {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  position: relative; }
   header a {
     text-decoration: none !important; }
   header h1 a {
@@ -6561,7 +6562,6 @@ header {
 
 .menu {
   width: 100%;
-  padding-top: 4rem;
   height: 100vh;
   opacity: 0;
   position: absolute;

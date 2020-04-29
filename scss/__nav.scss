@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 4rem;
-
+  position: relative;
   a {
     text-decoration: none !important;
   }
@@ -74,7 +74,6 @@ header {
 
 .menu {
   width: 100%;
-  padding-top: 4rem;
   height: 100vh;
   opacity: 0;
   position: absolute;
