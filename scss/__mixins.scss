@@ -1,6 +1,14 @@
+
+@mixin flex($direction){
+  display: flex;
+  flex-flow: $direction;
+}
+
 @mixin flex-center($direction){
   display: flex;
   flex-flow: $direction;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin media-query-768(){
@@ -10,6 +18,11 @@
 }
 @mixin media-query-480(){
   @media only screen and (max-width: 480px){
+    @content;
+  }
+}
+@mixin media-query-1024(){
+  @media only screen and (max-width: 1024px){
     @content;
   }
 }

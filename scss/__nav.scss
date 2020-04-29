@@ -1,10 +1,10 @@
 
 header {
-  @include flex-center(row);
+  @include flex(row);
   justify-content: space-between;
   align-items: center;
   margin-top: 4rem;
-  position: relative;
+
   a {
     text-decoration: none !important;
   }
@@ -14,6 +14,10 @@ header {
       color: $dark-text;
       font-weight: bold;
       letter-spacing: 0.7rem;
+
+      &:hover {
+        color: $dark-text;
+      }
     }
   }
 
@@ -66,16 +70,28 @@ header {
 
 .menu {
   width: 100%;
-  min-height: 30rem;
+  padding-top: 4rem;
+  height: 100vh;
   opacity: 0;
   position: absolute;
   left: 1000rem;
-  top: 4rem;
+  top: 0;
   transition: left 0.5s ease-in-out;
+  background: $white;
+  z-index: 1;
 
   &.open {
     opacity: 1;
     left: 0;
+  }
+
+  .container {
+    position: relative;
+
+    .menu-nav {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   ul {
@@ -86,11 +102,15 @@ header {
       font-family: HelveticaNeue-Light, sans-serif;
       font-size: 4.6rem;
       margin: 1rem 0;
-      color: $dark-text;
-      @include media-query-768(){
+
+      a {
+        color: $dark-text;
+      }
+
+      @include media-query-768() {
         font-size: 3.5rem;
       }
-      @include media-query-480(){
+      @include media-query-480() {
         font-size: 3rem;
       }
     }
@@ -100,10 +120,10 @@ header {
     li {
       font-size: 2rem;
       color: $dark-text;
-      @include media-query-768(){
+      @include media-query-768() {
         font-size: 1.8rem;
       }
-      @include media-query-480(){
+      @include media-query-480() {
         font-size: 1.6rem;
       }
     }
@@ -113,23 +133,19 @@ header {
     display: flex;
     font-weight: 600;
     font-size: 2rem;
-    margin: 0 1.2rem;
     background: transparent;
     border: none;
     cursor: pointer;
     outline: none;
     visibility: visible;
-    position: absolute;
-    right: 0;
-    top: -4rem;
 
     .closeX {
       width: 3rem;
       height: 3rem;
+      margin: 0 1rem;
       @include media-query-768() {
         font-size: 3rem;
-        top: -5rem;
-        margin-top: -1rem;
+        margin-top: -0.8rem;
       }
     }
   }
