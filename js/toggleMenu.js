@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#header').load("templates/header.html", () => {
+    $('#header').load("templates/nav.html", () => {
         let menuTrigger = document.querySelector('.menu-trigger');
         let menuIconTrigger = document.querySelector('.menu-icon-trigger');
         const navLinks = document.querySelector('.nav-links');

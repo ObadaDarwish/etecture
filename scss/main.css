@@ -1,3 +1,13 @@
+body {
+  overflow-x: hidden; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6595,15 +6605,5 @@ header {
           font-size: 3rem;
           top: -5rem;
           margin-top: -1rem; } }
-
-html {
-  font-size: 10px; }
-
-body {
-  overflow-x: hidden; }
-
-* {
-  margin: 0;
-  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
