@@ -6522,6 +6522,10 @@ header {
     color: #333333;
     font-weight: bold;
     letter-spacing: 0.7rem; }
+    @media only screen and (max-width: 480px) {
+      header h1 a {
+        font-size: 2rem;
+        letter-spacing: 0.5rem; } }
     header h1 a:hover {
       color: #333333; }
   header .nav-links {
