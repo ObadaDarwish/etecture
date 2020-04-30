@@ -18,15 +18,14 @@ $(document).ready(function () {
                 window.addEventListener('scroll', noScroll);
                 menuIconTrigger.classList.add('hidden');
                 setTimeout(()=>{
-                    document.body.style.overflowY = 'hidden';
+                    $('html').css({overflow: 'hidden'});
                 },500)
-
                 menuClosed = false;
             } else {
                 menu.classList.remove('open');
                 navLinks.classList.remove('hidden');
                 window.removeEventListener('scroll', noScroll);
-                document.body.style.overflowY = 'scroll';
+                $('html').css({overflow: 'scroll'});
                 menuClosed = true;
             }
         }
@@ -41,7 +40,7 @@ $(document).ready(function () {
             menu.classList.remove('open');
             navLinks.classList.remove('hidden');
             menuIconTrigger.classList.remove('hidden');
-            document.body.style.overflowY = 'scroll';
+            $('html').css({overflow: 'scroll'});
             window.removeEventListener('scroll', noScroll);
             menuClosed = true;
         });
