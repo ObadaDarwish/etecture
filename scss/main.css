@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none !important; }
+
 html {
   font-size: 10px; }
 
@@ -468,7 +471,8 @@ pre {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  max-width: 420px; }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -6623,34 +6627,6 @@ header {
 .homeContainer {
   display: flex;
   flex-flow: column; }
-  .homeContainer h1 {
-    margin-top: 13rem;
-    font-size: 4.6rem;
-    font-family: HelveticaNeue-Light, sans-serif;
-    font-weight: unset; }
-    @media only screen and (max-width: 768px) {
-      .homeContainer h1 {
-        font-size: 3.5rem; } }
-    @media only screen and (max-width: 480px) {
-      .homeContainer h1 {
-        font-size: 3rem; } }
-    .homeContainer h1 span {
-      position: relative; }
-      .homeContainer h1 span::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0.3rem;
-        right: 0;
-        margin: auto;
-        background: #333333;
-        height: 0.3rem; }
-        @media only screen and (max-width: 768px) {
-          .homeContainer h1 span::after {
-            bottom: 0.2rem; } }
-        @media only screen and (max-width: 480px) {
-          .homeContainer h1 span::after {
-            bottom: 0rem; } }
   .homeContainer section {
     margin-top: 10rem;
     font-family: HelveticaNeue-Light, sans-serif; }
@@ -6668,55 +6644,183 @@ header {
       @media only screen and (max-width: 480px) {
         .homeContainer section p:nth-child(2) {
           font-size: 3rem; } }
-  .homeContainer .products {
+  .homeContainer__products {
     display: flex;
     flex-flow: row wrap;
     margin: 10rem 0;
     justify-content: space-between; }
-    .homeContainer .products .product {
+    .homeContainer__products__product {
       display: flex;
       flex-flow: column;
       width: 19rem;
       margin-right: 2rem;
-      margin-bottom: 10rem;
-      text-decoration: none; }
+      margin-bottom: 10rem; }
       @media only screen and (max-width: 1024px) {
-        .homeContainer .products .product {
+        .homeContainer__products__product {
           width: 30rem; } }
       @media only screen and (max-width: 768px) {
-        .homeContainer .products .product {
+        .homeContainer__products__product {
           width: 100%; } }
-      .homeContainer .products .product img {
+      .homeContainer__products__product img {
         width: 19rem;
         height: 19rem; }
         @media only screen and (max-width: 1024px) {
-          .homeContainer .products .product img {
+          .homeContainer__products__product img {
             width: 16rem;
             height: 16rem; } }
         @media only screen and (max-width: 768px) {
-          .homeContainer .products .product img {
+          .homeContainer__products__product img {
             width: 12rem;
             height: 12rem; } }
         @media only screen and (max-width: 480px) {
-          .homeContainer .products .product img {
+          .homeContainer__products__product img {
             width: 10.6rem;
             height: 10.6rem; } }
-      .homeContainer .products .product .title {
+      .homeContainer__products__product__title {
         font-size: 1.6rem;
         font-family: HelveticaNeue-Light, sans-serif;
         margin-top: 5rem;
         color: #333333;
         padding: 0 1rem; }
-      .homeContainer .products .product .description1 {
+      .homeContainer__products__product__description1 {
         font-size: 2rem;
         font-family: HelveticaNeue-Medium, sans-serif;
         color: #333333;
         padding: 0 1rem; }
-      .homeContainer .products .product .description2 {
+      .homeContainer__products__product__description2 {
         font-size: 1.6rem;
         font-family: HelveticaNeue-Light, sans-serif;
         color: #333333;
         margin-top: 1.5rem;
         padding: 0 1rem; }
+
+.thesisContainer__motoContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10rem;
+  justify-content: space-between;
+  max-width: 90%; }
+  @media only screen and (max-width: 1024px) {
+    .thesisContainer__motoContainer {
+      max-width: 100%; } }
+  .thesisContainer__motoContainer__motoWrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 1024px) {
+      .thesisContainer__motoContainer__motoWrapper {
+        flex-basis: 50%; } }
+    @media only screen and (max-width: 480px) {
+      .thesisContainer__motoContainer__motoWrapper {
+        flex-basis: 100%;
+        justify-content: flex-start;
+        flex-direction: row; } }
+    .thesisContainer__motoContainer__motoWrapper img {
+      width: 14rem;
+      height: 14rem; }
+      @media only screen and (max-width: 1024px) {
+        .thesisContainer__motoContainer__motoWrapper img {
+          width: 16.1rem;
+          height: 16.1rem; } }
+      @media only screen and (max-width: 768px) {
+        .thesisContainer__motoContainer__motoWrapper img {
+          width: 12.1rem;
+          height: 12.1rem; } }
+      @media only screen and (max-width: 480px) {
+        .thesisContainer__motoContainer__motoWrapper img {
+          margin-right: 2rem; } }
+    .thesisContainer__motoContainer__motoWrapper p {
+      font-size: 2rem;
+      font-family: HelveticaNeue-Medium, sans-serif;
+      color: #333333;
+      margin-top: 1rem; }
+.thesisContainer__helpContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: 10rem; }
+  @media only screen and (max-width: 768px) {
+    .thesisContainer__helpContainer {
+      flex-direction: column; } }
+  .thesisContainer__helpContainer__helpText {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    flex-basis: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .thesisContainer__helpContainer__helpText {
+        flex-basis: 35%; } }
+    @media only screen and (max-width: 768px) {
+      .thesisContainer__helpContainer__helpText {
+        flex-basis: 100%; } }
+    .thesisContainer__helpContainer__helpText h3 {
+      font-size: 3rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      max-width: 55%;
+      margin: 2rem 0; }
+      @media only screen and (max-width: 1024px) {
+        .thesisContainer__helpContainer__helpText h3 {
+          max-width: 53%; } }
+      @media only screen and (max-width: 768px) {
+        .thesisContainer__helpContainer__helpText h3 {
+          max-width: 100%; } }
+  .thesisContainer__helpContainer__expansionContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    flex-basis: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .thesisContainer__helpContainer__expansionContainer {
+        flex-basis: 65%; } }
+    .thesisContainer__helpContainer__expansionContainer__expansion__title {
+      font-size: 2rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      position: relative;
+      cursor: pointer; }
+      .thesisContainer__helpContainer__expansionContainer__expansion__title p {
+        margin: 3rem 0;
+        font-size: 2rem; }
+      .thesisContainer__helpContainer__expansionContainer__expansion__title::before {
+        content: '';
+        height: 0.1rem;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.2);
+        position: absolute;
+        top: 0; }
+      .thesisContainer__helpContainer__expansionContainer__expansion__title svg {
+        margin-top: 3rem; }
+    .thesisContainer__helpContainer__expansionContainer__expansion__body {
+      font-size: 1.6rem; }
+
+#mainHeader {
+  margin-top: 13rem;
+  font-size: 4.6rem;
+  font-family: HelveticaNeue-Light, sans-serif;
+  font-weight: unset; }
+  @media only screen and (max-width: 768px) {
+    #mainHeader {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 480px) {
+    #mainHeader {
+      font-size: 3rem; } }
+  #mainHeader span {
+    position: relative; }
+    #mainHeader span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0.3rem;
+      right: 0;
+      margin: auto;
+      background: #333333;
+      height: 0.3rem; }
+      @media only screen and (max-width: 768px) {
+        #mainHeader span::after {
+          bottom: 0; } }
 
 /*# sourceMappingURL=main.css.map */

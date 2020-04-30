@@ -1,39 +1,6 @@
+
 .homeContainer {
   @include flex(column);
-
-  h1 {
-    margin-top: 13rem;
-    font-size: 4.6rem;
-    font-family: HelveticaNeue-Light, sans-serif;
-    font-weight: unset;
-    @include media-query-768(){
-      font-size: 3.5rem;
-    }
-    @include media-query-480(){
-      font-size: 3rem;
-    }
-
-    span {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0.3rem;
-        right: 0;
-        margin: auto;
-        background: $dark-text;
-        height: 0.3rem;
-        @include media-query-768(){
-          bottom: 0.2rem;
-        }
-        @include media-query-480(){
-          bottom: 0rem;
-        }
-      }
-    }
-  }
 
   section {
     margin-top: 10rem;
@@ -58,12 +25,12 @@
     }
   }
 
-  .products {
+  &__products {
     @include flex(row wrap);
     margin: 10rem 0;
     justify-content: space-between;
 
-    .product {
+    &__product {
       @include flex(column);
       width: 19rem;
       @include media-query-1024() {
@@ -74,7 +41,6 @@
       }
       margin-right: 2rem;
       margin-bottom: 10rem;
-      text-decoration: none;
 
 
       img {
@@ -94,7 +60,7 @@
         }
       }
 
-      .title {
+      &__title {
         font-size: 1.6rem;
         font-family: HelveticaNeue-Light, sans-serif;
         margin-top: 5rem;
@@ -102,14 +68,14 @@
         padding: 0 1rem;
       }
 
-      .description1 {
+      &__description1 {
         font-size: 2rem;
         font-family: HelveticaNeue-Medium, sans-serif;
         color: $dark-text;
         padding: 0 1rem;
       }
 
-      .description2 {
+      &__description2 {
         font-size: 1.6rem;
         font-family: HelveticaNeue-Light, sans-serif;
         color: $dark-text;

@@ -1,0 +1,123 @@
+.thesisContainer {
+
+  &__motoContainer {
+    @include flex(row wrap);
+    margin-top: 10rem;
+    justify-content: space-between;
+    max-width: 90%;
+    @include media-query-1024(){
+      max-width: 100%;
+    }
+
+    &__motoWrapper {
+      @include flex-center(column);
+      margin-bottom: 5rem;
+      @include media-query-1024() {
+       flex-basis: 50%;
+      }
+      @include media-query-480(){
+        flex-basis: 100%;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+      img {
+        width: 14rem;
+        height: 14rem;
+        @include media-query-1024() {
+          width: 16.1rem;
+          height: 16.1rem;
+        }
+        @include media-query-768() {
+          width: 12.1rem;
+          height: 12.1rem;
+        }
+        @include media-query-480(){
+          margin-right: 2rem;
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        font-family: HelveticaNeue-Medium, sans-serif;
+        color: $dark-text;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__helpContainer {
+    @include flex(row);
+    justify-content: space-around;
+    margin-top: 10rem;
+    @include media-query-768(){
+      flex-direction: column;
+    }
+    &__helpText {
+      @include flex(row);
+      justify-content: flex-start;
+      flex-basis: 50%;
+      @include media-query-1024() {
+        flex-basis: 35%;
+      }
+      @include media-query-768(){
+        flex-basis: 100%;
+      }
+
+      h3 {
+        font-size: 3rem;
+        font-family: HelveticaNeue-Light, sans-serif;
+        max-width: 55%;
+        margin: 2rem 0;
+        @include media-query-1024() {
+          max-width: 53%;
+        }
+        @include media-query-768(){
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__expansionContainer {
+      @include flex(column);
+      justify-content: space-between;
+      flex-basis: 50%;
+      @include media-query-1024() {
+        flex-basis: 65%;
+      }
+
+      &__expansion {
+        &__title {
+          font-size: 2rem;
+          font-family: HelveticaNeue-Light, sans-serif;
+          @include flex(row);
+          justify-content: flex-start;
+          position: relative;
+          cursor: pointer;
+
+          p {
+            margin: 3rem 0;
+            font-size: 2rem;
+          }
+
+          &::before {
+            content: '';
+            height: 0.1rem;
+            width: 100%;
+            background: $horizontal_line_baackground;
+            position: absolute;
+            top: 0;
+          }
+
+          svg {
+            margin-top: 3rem;
+          }
+        }
+
+        &__body {
+          font-size: 1.6rem;
+        }
+      }
+
+    }
+  }
+}
