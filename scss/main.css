@@ -6794,6 +6794,8 @@ header {
         top: 0; }
       .thesisContainer__helpContainer__expansionContainer__expansion__title svg {
         margin-top: 3rem; }
+      .thesisContainer__helpContainer__expansionContainer__expansion__title .bi-x {
+        display: none; }
     .thesisContainer__helpContainer__expansionContainer__expansion__body {
       font-size: 1.6rem; }
 .thesisContainer #middle-header {

@@ -113,6 +113,10 @@
           svg {
             margin-top: 3rem;
           }
+
+          .bi-x {
+            display: none
+          }
         }
 
         &__body {
@@ -251,7 +255,7 @@
         @include media-query-1024() {
           width: 80%;
         }
-        @include media-query-768(){
+        @include media-query-768() {
           width: 100%;
         }
       }
