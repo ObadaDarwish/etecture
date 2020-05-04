@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0; }
 
-a {
-  text-decoration: none !important; }
-
 html {
   font-size: 10px; }
 
@@ -14,6 +11,9 @@ html, body {
 body {
   max-width: 100%;
   min-height: 100vh; }
+
+a {
+  text-decoration: none; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -6748,7 +6748,7 @@ header {
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
-    flex-basis: 50%; }
+    flex-basis: 40%; }
     @media only screen and (max-width: 1024px) {
       .thesisContainer__helpContainer__helpText {
         flex-basis: 35%; } }
@@ -6758,7 +6758,7 @@ header {
     .thesisContainer__helpContainer__helpText h3 {
       font-size: 3rem;
       font-family: HelveticaNeue-Light, sans-serif;
-      max-width: 55%;
+      max-width: 60%;
       margin: 2rem 0; }
       @media only screen and (max-width: 1024px) {
         .thesisContainer__helpContainer__helpText h3 {
@@ -6770,7 +6770,7 @@ header {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    flex-basis: 50%; }
+    flex-basis: 60%; }
     @media only screen and (max-width: 1024px) {
       .thesisContainer__helpContainer__expansionContainer {
         flex-basis: 65%; } }
@@ -6796,6 +6796,114 @@ header {
         margin-top: 3rem; }
     .thesisContainer__helpContainer__expansionContainer__expansion__body {
       font-size: 1.6rem; }
+.thesisContainer #middle-header {
+  font-size: 3rem;
+  font-family: HelveticaNeue-Light, sans-serif;
+  margin: 10rem 0; }
+.thesisContainer__productContainer {
+  display: flex;
+  flex-flow: column; }
+  .thesisContainer__productContainer__productWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 10rem; }
+    .thesisContainer__productContainer__productWrapper__img {
+      flex-basis: 50%;
+      height: 24rem;
+      width: 47.4rem; }
+      @media only screen and (max-width: 1024px) {
+        .thesisContainer__productContainer__productWrapper__img {
+          flex-basis: 55%; } }
+      @media only screen and (max-width: 768px) {
+        .thesisContainer__productContainer__productWrapper__img {
+          flex-basis: 100%;
+          width: 100%; } }
+    .thesisContainer__productContainer__productWrapper__info {
+      flex-basis: 50%;
+      display: flex;
+      flex-flow: column;
+      font-size: 2rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      color: #333333;
+      padding-left: 5rem; }
+      @media only screen and (max-width: 1024px) {
+        .thesisContainer__productContainer__productWrapper__info {
+          flex-basis: 45%;
+          padding-left: 7rem; } }
+      @media only screen and (max-width: 768px) {
+        .thesisContainer__productContainer__productWrapper__info {
+          flex-basis: 100%;
+          padding-left: 0;
+          padding-top: 2rem; } }
+      .thesisContainer__productContainer__productWrapper__info h4 {
+        font-size: 2rem;
+        font-family: HelveticaNeue-Medium, sans-serif;
+        margin-bottom: 2rem; }
+      .thesisContainer__productContainer__productWrapper__info p {
+        margin-bottom: 2rem;
+        width: 96%; }
+        @media only screen and (max-width: 1024px) {
+          .thesisContainer__productContainer__productWrapper__info p {
+            width: 70%;
+            margin-bottom: 1.6rem; } }
+        @media only screen and (max-width: 768px) {
+          .thesisContainer__productContainer__productWrapper__info p {
+            width: 100%; } }
+      .thesisContainer__productContainer__productWrapper__info a {
+        color: #333333;
+        width: 11.1rem;
+        position: relative; }
+        .thesisContainer__productContainer__productWrapper__info a::after {
+          content: '';
+          height: 1px;
+          background: #333333;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0.3rem; }
+.thesisContainer__howItWorksContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10rem; }
+  .thesisContainer__howItWorksContainer__contactUs {
+    flex-basis: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .thesisContainer__howItWorksContainer__contactUs {
+        flex-basis: 35%; } }
+    @media only screen and (max-width: 768px) {
+      .thesisContainer__howItWorksContainer__contactUs {
+        flex-basis: 100%; } }
+    .thesisContainer__howItWorksContainer__contactUs h4 {
+      font-size: 3rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      margin-bottom: 5rem; }
+    .thesisContainer__howItWorksContainer__contactUs p {
+      font-size: 1.8rem;
+      text-decoration: underline;
+      margin-bottom: 5rem; }
+      @media only screen and (max-width: 768px) {
+        .thesisContainer__howItWorksContainer__contactUs p {
+          font-size: 1.6rem; } }
+  .thesisContainer__howItWorksContainer__howItWorks {
+    flex-basis: 50%;
+    padding-left: 10rem; }
+    @media only screen and (max-width: 1024px) {
+      .thesisContainer__howItWorksContainer__howItWorks {
+        flex-basis: 65%; } }
+    @media only screen and (max-width: 768px) {
+      .thesisContainer__howItWorksContainer__howItWorks {
+        flex-basis: 100%;
+        padding-left: 0; } }
+    .thesisContainer__howItWorksContainer__howItWorks p {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 1024px) {
+        .thesisContainer__howItWorksContainer__howItWorks p {
+          width: 80%; } }
+      @media only screen and (max-width: 768px) {
+        .thesisContainer__howItWorksContainer__howItWorks p {
+          width: 100%; } }
 
 #mainHeader {
   margin-top: 13rem;

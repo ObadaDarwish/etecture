@@ -1,4 +1,3 @@
-
 // bootstrap overrides goes here
 $grid-breakpoints: (
         xs: 0,
@@ -15,6 +14,9 @@ $container-max-widths: (
         xl: 1024px,
 ) !default;
 
+a {
+  text-decoration: none;
+}
 
 @import "bootstrap/bootstrap";
 
