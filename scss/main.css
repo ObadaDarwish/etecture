@@ -13,7 +13,9 @@ body {
   min-height: 100vh; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
+  a:hover {
+    text-decoration: none !important; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -472,7 +474,7 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 420px; }
+  max-width: 430px; }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -6681,7 +6683,8 @@ header {
         font-family: HelveticaNeue-Light, sans-serif;
         margin-top: 5rem;
         color: #333333;
-        padding: 0 1rem; }
+        padding: 0 1rem;
+        text-decoration: none; }
       .homeContainer__products__product__description1 {
         font-size: 2rem;
         font-family: HelveticaNeue-Medium, sans-serif;
@@ -6736,68 +6739,6 @@ header {
       font-family: HelveticaNeue-Medium, sans-serif;
       color: #333333;
       margin-top: 1rem; }
-.thesisContainer__helpContainer {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  margin-top: 10rem; }
-  @media only screen and (max-width: 768px) {
-    .thesisContainer__helpContainer {
-      flex-direction: column; } }
-  .thesisContainer__helpContainer__helpText {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    flex-basis: 40%; }
-    @media only screen and (max-width: 1024px) {
-      .thesisContainer__helpContainer__helpText {
-        flex-basis: 35%; } }
-    @media only screen and (max-width: 768px) {
-      .thesisContainer__helpContainer__helpText {
-        flex-basis: 100%; } }
-    .thesisContainer__helpContainer__helpText h3 {
-      font-size: 3rem;
-      font-family: HelveticaNeue-Light, sans-serif;
-      max-width: 60%;
-      margin: 2rem 0; }
-      @media only screen and (max-width: 1024px) {
-        .thesisContainer__helpContainer__helpText h3 {
-          max-width: 53%; } }
-      @media only screen and (max-width: 768px) {
-        .thesisContainer__helpContainer__helpText h3 {
-          max-width: 100%; } }
-  .thesisContainer__helpContainer__expansionContainer {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    flex-basis: 60%; }
-    @media only screen and (max-width: 1024px) {
-      .thesisContainer__helpContainer__expansionContainer {
-        flex-basis: 65%; } }
-    .thesisContainer__helpContainer__expansionContainer__expansion__title {
-      font-size: 2rem;
-      font-family: HelveticaNeue-Light, sans-serif;
-      display: flex;
-      flex-flow: row;
-      justify-content: flex-start;
-      position: relative;
-      cursor: pointer; }
-      .thesisContainer__helpContainer__expansionContainer__expansion__title p {
-        margin: 3rem 0;
-        font-size: 2rem; }
-      .thesisContainer__helpContainer__expansionContainer__expansion__title::before {
-        content: '';
-        height: 0.1rem;
-        width: 100%;
-        background: rgba(51, 51, 51, 0.2);
-        position: absolute;
-        top: 0; }
-      .thesisContainer__helpContainer__expansionContainer__expansion__title svg {
-        margin-top: 3rem; }
-      .thesisContainer__helpContainer__expansionContainer__expansion__title .bi-x {
-        display: none; }
-    .thesisContainer__helpContainer__expansionContainer__expansion__body {
-      font-size: 1.6rem; }
 .thesisContainer #middle-header {
   font-size: 3rem;
   font-family: HelveticaNeue-Light, sans-serif;
@@ -6864,48 +6805,79 @@ header {
           left: 0;
           right: 0;
           bottom: 0.3rem; }
-.thesisContainer__howItWorksContainer {
+
+.productContainer__description {
   display: flex;
-  flex-flow: row wrap;
-  margin-bottom: 10rem; }
-  .thesisContainer__howItWorksContainer__contactUs {
-    flex-basis: 50%; }
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0; }
+  .productContainer__description #mainPicture {
+    width: 38.2rem;
+    height: 38.2rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem; }
     @media only screen and (max-width: 1024px) {
-      .thesisContainer__howItWorksContainer__contactUs {
-        flex-basis: 35%; } }
+      .productContainer__description #mainPicture {
+        width: 32.2rem;
+        height: 32.2rem; } }
     @media only screen and (max-width: 768px) {
-      .thesisContainer__howItWorksContainer__contactUs {
-        flex-basis: 100%; } }
-    .thesisContainer__howItWorksContainer__contactUs h4 {
-      font-size: 3rem;
-      font-family: HelveticaNeue-Light, sans-serif;
-      margin-bottom: 5rem; }
-    .thesisContainer__howItWorksContainer__contactUs p {
-      font-size: 1.8rem;
-      text-decoration: underline;
-      margin-bottom: 5rem; }
-      @media only screen and (max-width: 768px) {
-        .thesisContainer__howItWorksContainer__contactUs p {
-          font-size: 1.6rem; } }
-  .thesisContainer__howItWorksContainer__howItWorks {
-    flex-basis: 50%;
-    padding-left: 10rem; }
+      .productContainer__description #mainPicture {
+        width: 36rem;
+        height: 36rem; } }
+    @media only screen and (max-width: 480px) {
+      .productContainer__description #mainPicture {
+        width: 21rem;
+        height: 21rem; } }
+  .productContainer__description p {
+    font-size: 3rem;
+    font-family: HelveticaNeue-Light, sans-serif;
+    margin: 5rem 0;
+    width: 95%;
+    align-self: flex-start; }
     @media only screen and (max-width: 1024px) {
-      .thesisContainer__howItWorksContainer__howItWorks {
-        flex-basis: 65%; } }
+      .productContainer__description p {
+        align-self: center;
+        width: 72%; } }
     @media only screen and (max-width: 768px) {
-      .thesisContainer__howItWorksContainer__howItWorks {
-        flex-basis: 100%;
-        padding-left: 0; } }
-    .thesisContainer__howItWorksContainer__howItWorks p {
-      font-size: 2rem;
-      margin-bottom: 2rem; }
+      .productContainer__description p {
+        font-size: 2rem;
+        width: 100%; } }
+  .productContainer__description__subImgs {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 5rem; }
+    @media only screen and (max-width: 1024px) {
+      .productContainer__description__subImgs {
+        justify-content: center; } }
+    .productContainer__description__subImgs img {
+      width: 37.8rem;
+      height: 37.8rem; }
       @media only screen and (max-width: 1024px) {
-        .thesisContainer__howItWorksContainer__howItWorks p {
-          width: 80%; } }
+        .productContainer__description__subImgs img {
+          width: 63.8rem;
+          height: 63.8rem;
+          margin-bottom: 2rem; } }
       @media only screen and (max-width: 768px) {
-        .thesisContainer__howItWorksContainer__howItWorks p {
-          width: 100%; } }
+        .productContainer__description__subImgs img {
+          width: 60rem;
+          height: 60rem; } }
+      @media only screen and (max-width: 480px) {
+        .productContainer__description__subImgs img {
+          width: 42rem;
+          height: 42rem; } }
+.productContainer .helpContainer__expansionContainer__expansion:last-child {
+  position: relative; }
+  .productContainer .helpContainer__expansionContainer__expansion:last-child::after {
+    content: '';
+    height: 0.1rem;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.2);
+    position: absolute; }
 
 #mainHeader {
   margin-top: 13rem;
@@ -6932,5 +6904,111 @@ header {
       @media only screen and (max-width: 768px) {
         #mainHeader span::after {
           bottom: 0; } }
+
+.helpContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: 10rem; }
+  @media only screen and (max-width: 768px) {
+    .helpContainer {
+      flex-direction: column; } }
+  .helpContainer__helpText {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    flex-basis: 40%; }
+    @media only screen and (max-width: 1024px) {
+      .helpContainer__helpText {
+        flex-basis: 35%; } }
+    @media only screen and (max-width: 768px) {
+      .helpContainer__helpText {
+        flex-basis: 100%; } }
+    .helpContainer__helpText h3 {
+      font-size: 3rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      max-width: 60%;
+      margin: 2rem 0; }
+      @media only screen and (max-width: 1024px) {
+        .helpContainer__helpText h3 {
+          max-width: 53%; } }
+      @media only screen and (max-width: 768px) {
+        .helpContainer__helpText h3 {
+          max-width: 100%; } }
+  .helpContainer__expansionContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    flex-basis: 60%; }
+    @media only screen and (max-width: 1024px) {
+      .helpContainer__expansionContainer {
+        flex-basis: 65%; } }
+    .helpContainer__expansionContainer__expansion__title {
+      font-size: 2rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      position: relative;
+      cursor: pointer; }
+      .helpContainer__expansionContainer__expansion__title p {
+        margin: 3rem 0;
+        font-size: 2rem; }
+      .helpContainer__expansionContainer__expansion__title::before {
+        content: '';
+        height: 0.1rem;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.2);
+        position: absolute;
+        top: 0; }
+      .helpContainer__expansionContainer__expansion__title svg {
+        margin-top: 3rem; }
+      .helpContainer__expansionContainer__expansion__title .bi-x {
+        display: none; }
+    .helpContainer__expansionContainer__expansion__body {
+      font-size: 1.6rem; }
+
+.howItWorksContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10rem 0; }
+  .howItWorksContainer__contactUs {
+    flex-basis: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .howItWorksContainer__contactUs {
+        flex-basis: 35%; } }
+    @media only screen and (max-width: 768px) {
+      .howItWorksContainer__contactUs {
+        flex-basis: 100%; } }
+    .howItWorksContainer__contactUs h4 {
+      font-size: 3rem;
+      font-family: HelveticaNeue-Light, sans-serif;
+      margin-bottom: 5rem; }
+    .howItWorksContainer__contactUs p {
+      font-size: 1.8rem;
+      text-decoration: underline;
+      margin-bottom: 5rem; }
+      @media only screen and (max-width: 768px) {
+        .howItWorksContainer__contactUs p {
+          font-size: 1.6rem; } }
+  .howItWorksContainer__howItWorks {
+    flex-basis: 50%;
+    padding-left: 10rem; }
+    @media only screen and (max-width: 1024px) {
+      .howItWorksContainer__howItWorks {
+        flex-basis: 65%; } }
+    @media only screen and (max-width: 768px) {
+      .howItWorksContainer__howItWorks {
+        flex-basis: 100%;
+        padding-left: 0; } }
+    .howItWorksContainer__howItWorks p {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 1024px) {
+        .howItWorksContainer__howItWorks p {
+          width: 80%; } }
+      @media only screen and (max-width: 768px) {
+        .howItWorksContainer__howItWorks p {
+          width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
