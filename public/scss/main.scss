@@ -17,9 +17,9 @@ body {
 }
 
 @import "_bootstrap-overrides";
-@import "__fonts";
-@import "__mixins";
-@import "__variables";
+@import "_fonts";
+@import "_mixins";
+@import "_variables";
 @import "pages/_nav";
 @import "pages/_home";
 @import "pages/_thesis";
