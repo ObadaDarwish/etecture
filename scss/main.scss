@@ -7,7 +7,8 @@ html {
   font-size: 10px;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden !important;
 }
 
@@ -21,19 +22,19 @@ body {
 @import "__mixins";
 @import "__variables";
 @import "pages/_nav";
+@import "pages/_blog";
 @import "pages/_home";
 @import "pages/_thesis";
-
 
 #mainHeader {
   margin-top: 13rem;
   font-size: 4.6rem;
   font-family: HelveticaNeue-Light, sans-serif;
   font-weight: unset;
-  @include media-query-768(){
+  @include media-query-768() {
     font-size: 3.5rem;
   }
-  @include media-query-480(){
+  @include media-query-480() {
     font-size: 3rem;
   }
 
@@ -49,10 +50,9 @@ body {
       margin: auto;
       background: $dark-text;
       height: 0.3rem;
-      @include media-query-768(){
+      @include media-query-768() {
         bottom: 0;
       }
     }
   }
 }
-

@@ -1,0 +1,60 @@
+@import '../_mixins';
+
+.blogContainer {
+  font-family: HelveticaNeue-Light, sans-serif;
+
+  &__blogTitle {
+    font-weight: normal;
+    margin-top: 5.5rem;
+    font-size: 3rem;
+  }
+  &__introductoryPost {
+    font-size: 2rem;
+    margin-top: 4rem;
+    word-spacing: 0.35rem;
+  }
+  &__articlesContainer {
+    margin: 6rem 1rem;
+    .card {
+      border: none;
+      margin-top: 7rem;
+    }
+    &__postTitle {
+      margin-top: 2rem;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+    }
+    &__briefSummary {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      word-spacing: 0.35rem;
+    }
+    &__postMeta {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    @include media-query-min-481() {
+      &__firstArticle {
+        .card {
+          display: flex;
+          flex-direction: row;
+          img {
+            width: 50%;
+          }
+
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 4rem;
+            .card-title {
+              margin-top: -1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
